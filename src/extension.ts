@@ -41,7 +41,7 @@ class PlsqlCompletionItemProvider implements vscode.CompletionItemProvider {
             case 1:
                 return this.findPackageNames(searchTerms[0]);
             case 2:
-                return this.findMethodNames(searchTerms[0);
+                return this.findMethodNames(searchTerms[0]);
             default:
                 return null;
         }

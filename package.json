@@ -1,0 +1,32 @@
+{
+    "name": "plsql-toolkit",
+    "displayName": "plsql-toolkit",
+    "description": "Intellisense support for PL/SQL and Oracle Application Express APIs",
+    "version": "0.0.1",
+    "publisher": "apng",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:plsql"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}

@@ -1,6 +1,6 @@
 {
-    "name": "plsql-toolkit",
-    "displayName": "plsql-toolkit",
+    "name": "oracle-autocomplete",
+    "displayName": "oracle-autocomplete",
     "description": "Intellisense support for PL/SQL and Oracle Application Express APIs",
     "version": "0.0.1",
     "publisher": "apng",

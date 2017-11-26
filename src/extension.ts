@@ -29,11 +29,7 @@ class PlsqlCompletionItemProvider implements vscode.CompletionItemProvider {
         let lineTillCurrentPosition = lineText.substr(0, position.character);
         let currentWord = this.getCurrentWord(document, position);
 
-        console.log('trigger kind: ', (context.triggerKind == vscode.CompletionTriggerKind.Invoke ? 'invoked' : 'character'));
-        console.log('lineTillCurrentPosition', lineTillCurrentPosition);
-        console.log('currentWord', currentWord);
         let searchTerms = currentWord.split('.');
-        // console.log('searchTerms', searchTerms);
 
         switch(searchTerms.length) {
             case 1:
@@ -45,9 +41,7 @@ class PlsqlCompletionItemProvider implements vscode.CompletionItemProvider {
         }
     }
     resolveCompletionItem?(item: vscode.CompletionItem, token: vscode.CancellationToken): vscode.ProviderResult<vscode.CompletionItem> {
-
-        // console.log(item);
-        // item.detail = 'more about this...';
+		// Return the item as-is for now.
         return item;
     }
 
@@ -102,30 +96,9 @@ export function activate(context: vscode.ExtensionContext) {
 
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
-    console.log('Extension "plsql-toolkit" is now active!');
+    console.log('Extension "oracle-autocomplete" is now active!');
+	console.log(vscode.extensions);
 
-    // The command has been defined in the package.json file
-    // Now provide the implementation of the command with  registerCommand
-    // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.sayHello', () => {
-        // The code you place here will be executed every time your command is executed
-
-        // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
-    });
-
-    context.subscriptions.push(disposable);
-    // context.subscriptions.push(
-        // vscode.languages.registerHoverProvider(
-        //     'plsql',
-        //     {
-        //         provideHover(document, position, token) {
-        //             console.log('hovering...');
-        //             return new Hover('Hovering');
-        //         }
-        //     }
-        // );
-    // );
     context.subscriptions.push(
         vscode.languages.registerCompletionItemProvider(
             'plsql',
@@ -137,5 +110,5 @@ export function activate(context: vscode.ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate() {
-    console.log('Extension "plsql-toolkit" is now inactive!');
+    console.log('Extension "oracle-autocomplete" is now inactive!');
 }

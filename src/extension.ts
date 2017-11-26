@@ -86,7 +86,7 @@ class PlsqlCompletionItemProvider implements vscode.CompletionItemProvider {
 					let apiDetails: ApiDetails = dictionary[packageName][methodName];
 					let completionItem = new CompletionItem(methodName.toLowerCase(), vscode.CompletionItemKind.Method);
 					completionItem.detail = apiDetails.descriptionText;
-					completionItem.insertText = completionItem.label + '(\n' + apiDetails.bodyNoDefault.replace(/\$(\d+)/g, '\${$1:param}') + '\n);';
+					completionItem.insertText = new vscode.SnippetString(completionItem.label + '(\n' + apiDetails.bodyNoDefault + '\n);');
 					results.push(completionItem);
                 });
             }

@@ -1,7 +1,7 @@
 {
     "name": "orclapex-autocomplete",
-    "displayName": "orclapex-autocomplete",
-    "description": "Intellisense support for PL/SQL and Oracle Application Express APIs",
+    "displayName": "Intellisense for the Oracle Application Express Developer",
+    "description": "Intellisense support for Oracle Database and Oracle Application Express APIs",
     "version": "0.0.1",
     "publisher": "apng",
     "author": {
@@ -9,6 +9,11 @@
       "email": "adrian.png@fuzziebrain.com",
       "url": "https://github.com/fuzziebrain"
     },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/fuzziebrain/orclapex-autocomplete"
+    },
+    "icon": "images/apex.png",
     "license": "MIT",
     "engines": {
         "vscode": "^1.18.0"
@@ -21,12 +26,7 @@
       "apex",
       "orclapex",
       "oracle",
-      "application",
-      "express",
-      "intellisense",
-      "autocomplete",
-      "code",
-      "hint"
+      "intellisense"
     ],
     "activationEvents": [
         "onLanguage:plsql"

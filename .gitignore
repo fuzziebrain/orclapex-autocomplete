@@ -139,4 +139,4 @@ $RECYCLE.BIN/
 
 out
 .vscode-test/
-.vsix
+*.vsix

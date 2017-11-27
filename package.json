@@ -2,7 +2,7 @@
     "name": "orclapex-autocomplete",
     "displayName": "Intellisense for the Oracle Application Express Developer",
     "description": "Intellisense support for Oracle Database and Oracle Application Express APIs",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "apng",
     "author": {
       "name": "Adrian Png",

@@ -4,6 +4,12 @@
     "description": "Intellisense support for PL/SQL and Oracle Application Express APIs",
     "version": "0.0.1",
     "publisher": "apng",
+    "author": {
+      "name": "Adrian Png",
+      "email": "adrian.png@fuzziebrain.com",
+      "url": "https://github.com/fuzziebrain"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.18.0"
     },
@@ -28,6 +34,9 @@
     "main": "./out/extension",
     "contributes": {
     },
+    "extensionDependencies":[
+      "xyz.plsql-language"
+    ],
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",

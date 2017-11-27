@@ -1,6 +1,6 @@
 {
-    "name": "oracle-autocomplete",
-    "displayName": "oracle-autocomplete",
+    "name": "orclapex-autocomplete",
+    "displayName": "orclapex-autocomplete",
     "description": "Intellisense support for PL/SQL and Oracle Application Express APIs",
     "version": "0.0.1",
     "publisher": "apng",
@@ -8,7 +8,19 @@
         "vscode": "^1.18.0"
     },
     "categories": [
-        "Other"
+        "Languages"
+    ],
+    "keywords": [
+      "plsql",
+      "apex",
+      "orclapex",
+      "oracle",
+      "application",
+      "express",
+      "intellisense",
+      "autocomplete",
+      "code",
+      "hint"
     ],
     "activationEvents": [
         "onLanguage:plsql"

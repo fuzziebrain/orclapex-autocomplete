@@ -1,4 +1,4 @@
-# Intellisense for the Oracle Application Express Developer
+# Intellisense for the Oracle Developer
 
 This extension provides intellisense support for standard Oracle Database and [Oracle Application Express](https://apex.oracle.com/) (APEX) PL/SQL APIs. It uses the source dictionary created by the Atom IDE package [autocomplete-oracle](https://atom.io/packages/autocomplete-oracle).
 
@@ -29,6 +29,4 @@ _None_
 
 ## Release Notes
 
-### 0.0.1
-
-* Initial release.
+See [CHANGELOG](./CHANGELOG.md).
